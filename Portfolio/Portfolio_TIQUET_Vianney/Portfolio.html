@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vianney TIQUET</title>
+    <!-- Lien vers la feuille de style CSS externe -->
+    <link rel="stylesheet" type="text/css" href="global.css">
+    <link rel="stylesheet" href="style.css">
+    <!--    Icon de l'onglet-->
+    <link rel="icon" type="image/png" href="img/vianney_logo.png ">
+</head>
+<body>
+<div class="container">
+    <div id="accueil" class="cover" style="display: flex; justify-content: center; ">
+        <video id="presentationVideo" autoplay loop muted>
+            <source src="img/video.mp4" type="video/webm">
+            Votre navigateur ne prend pas en charge la balise vidéo.
+        </video>
+    </div>
+
+    <!--    Nav Bar-->
+    <nav class="bash-navbar">
+        <div class="bash-navbar-logo">
+            <img src="img/vianney_logo.png" alt="Description de l'image">
+        </div>
+        <div class="bash-navbar-links">
+            <a href="#accueil">~$ Home</a>
+            <a href="#about">~$ about</a>
+            <a href="#competences">~$ competences</a>
+            <a href="#pp">~$ ls projects</a>
+            <a href="#contact">~$ contact</a>
+        </div>
+    </nav>
+
+    <!--    PARTIE A PROPOS     -->
+    <section id="about" class="bash-section">
+        <div class="bash-header">
+            <div class="container_text">
+                <p class="typed">
+                    <span class="bash-prompt">vtiquet@machine:</span><span class="bash-path">~/informations</span><span
+                        class="bash-prompt">$</span>
+                    <span class="bash-command">cat</span> personal_info.txt
+                </p>
+            </div>
+        </div>
+        <div class="bash-content">
+            <div class="image-container">
+                <img src="img/image_vianney.jpeg" alt="Image de Vianney TIQUET" class="bash-image">
+                <p class="image-caption">Image: Vianney TIQUET</p>
+            </div>
+            <p><span class="bash-command">> Nom:</span> Vianney TIQUET</p>
+            <p><span class="bash-command">> Âge:</span> 26 ans</p>
+            <p><span class="bash-command">> Lieu:</span> Deuil-la-barre, France</p>
+            <p><span class="bash-command">> Email:</span> vianney.tiquet@hotmail.fr</p>
+            <p>
+                <span class="bash-command">> Informations: </span>
+                <span class="long-bash-txt">
+                Jeune et dynamique, je saurais sortir du lot grâce à de nombreuses expériences
+                professionnelles et à une détermination sans faille faisant de moi un véritable
+                couteau suisse. Ayant trouvé ma voie dans le domaine du numérique, je n'aspire
+                plus qu'à trouver un organisme dans lequel je pourrai m'épanouir et faire carrière
+                tout en m'enrichissant d'expériences novatrices et de nouveaux projets. </span>
+            </p>
+        </div>
+    </section>
+
+    <!--    PARTIE Formation     -->
+    <section class="bash-section">
+        <div class="bash-header">
+            <div class="container_text">
+                <p class="typed">
+                    <span class="bash-prompt">vtiquet@machine:</span><span class="bash-path">~/informations</span><span
+                        class="bash-prompt">$</span>
+                    <span class="bash-command">cat</span> formations.txt
+                </p>
+            </div>
+        </div>
+        <div class="bash-content long-bash-txt">
+            <p><span class="bash-command">> Institut européen de formation des compagnons du tour de France :</span> CAP
+                Intervention sur le Patrimoine Bâti en Couverture (IPBC) (2016/2017)</p>
+            <p><span class="bash-command">> Lycée professionnel LMB de Felletin:</span> BAC pro IPBC en alternance
+                (2018/2019)</p>
+            <p><span class="bash-command">> Centre de formation POP school SQY :</span> Formation IOT Maker de 6 mois
+                (2020/2021)</p>
+            <p><span class="bash-command">> Centre de formation POP school Paris:</span> Formation Data security de 7
+                mois (2021/2022)</p>
+            <p><span class="bash-command">> Diplôme universitaire (DU) :</span> Administrateur réseau à Ecouen (2022)
+            </p>
+            <p><span class="bash-command">> BUT Réseau et télécommunications (R&T):</span> IUT de Villetaneuse, Sorbonne
+                Paris Nord (2023-AJD)</p>
+        </div>
+    </section>
+
+    <!--    PARTIE CENTRE D'INTERET     -->
+    <section class="bash-section">
+        <div class="bash-header">
+            <div class="container_text">
+                <p class="typed">
+                    <span class="bash-prompt">vtiquet@machine:</span><span class="bash-path">~/informations</span><span
+                        class="bash-prompt">$</span>
+                    <span class="bash-command">cat</span> centre_interet.txt
+                </p>
+            </div>
+        </div>
+        <div class="bash-content">
+            <p><span class="bash-command">> </span>Lecture</p>
+            <p><span class="bash-command">> </span>Jeu d'échec</p>
+            <p><span class="bash-command">> </span>Programmation</p>
+            <p><span class="bash-command">> </span>Avancées technologiques</p>
+            <p><span class="bash-command">> </span>Web culture</p>
+        </div>
+    </section>
+
+    <!--    PARTIE COMPETENCES     -->
+    <section id="competences" class="bash-section">
+        <div class="bash-header">
+            <div class="container_text">
+                <p class="typed">
+                    <span class="bash-prompt">vtiquet@machine:</span><span class="bash-path">~/competences</span><span
+                        class="bash-prompt">$</span>
+                    <span class="bash-command">./list_competences.sh</span>
+                </p>
+            </div>
+        </div>
+        <div class="bash-content">
+            <div style="display: flex">
+                <div class="column" style="border-right: 5px solid #1e1e1e; border-radius: 10px;margin-right: 30px">
+                    <div class="competence">
+                        <h3><span class="bash-command">cat</span> programmation_principale.txt</h3>
+                        <p><span class="note">[=========&nbsp;&nbsp;&nbsp;>]</span> 67%</p>
+                        <ul>
+                            <li><span class="bash-command">></span> C++ (Arduino)</li>
+                            <li><span class="bash-command">></span> Bash</li>
+                            <li><span class="bash-command">></span> Python</li>
+                        </ul>
+                    </div>
+                    <div class="competence">
+                        <h3><span class="bash-command">cat</span> programmation_secondaire.txt</h3>
+                        <p><span class="note">[====&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;>]</span> 33%</p>
+                        <ul>
+                            <li><span class="bash-command">></span> HTML/ CSS/ Php</li>
+                            <li><span class="bash-command">></span> JavaScript</li>
+                        </ul>
+                    </div>
+                    <div class="competence">
+                        <h3><span class="bash-command">cat</span> protocole_de_communication.txt</h3>
+                        <p><span class="note">[=========&nbsp;&nbsp;&nbsp;>]</span> 67%</p>
+                        <ul>
+                            <li><span class="bash-command">></span> LoRa</li>
+                            <li><span class="bash-command">></span> Liaison série (SPI / I2C / UART)</li>
+                            <li><span class="bash-command">></span> UDP / TCPs</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="competence">
+                        <h3><span class="bash-command">cat</span> cybersecurite.txt</h3>
+                        <p><span class="note">[======&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;>]</span> 50%</p>
+                        <ul>
+                            <li><span class="bash-command">></span> Nmap</li>
+                            <li><span class="bash-command">></span> Maltego</li>
+                            <li><span class="bash-command">></span> Burp suite</li>
+                            <li><span class="bash-command">></span> Wireshark</li>
+                        </ul>
+                    </div>
+                    <div class="competence">
+                        <h3><span class="bash-command">cat</span> reseau.txt</h3>
+                        <p><span class="note">[=========&nbsp;&nbsp;&nbsp;>]</span> 67%</p>
+                        <ul>
+                            <li><span class="bash-command">></span> Cisco packet tracer</li>
+                            <li><span class="bash-command">></span> Wireshark</li>
+                            <li><span class="bash-command">></span> Marionnet</li>
+                        </ul>
+                    </div>
+                    <div class="competence">
+                        <h3><span class="bash-command">cat</span> embarque_IOT.txt</h3>
+                        <p><span class="note">[======&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;>]</span> 50%</p>
+                        <ul>
+                            <li><span class="bash-command">></span> IDE Arduino</li>
+                            <li><span class="bash-command">></span> NodeRed</li>
+                            <li><span class="bash-command">></span> FreeCad / Cura</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--    PARTIE PROJET PERSO     -->
+    <section id="pp" class="bash-section">
+        <div class="bash-header">
+            <div class="container_text">
+                <p class="typed">
+                    <span class="bash-prompt">vtiquet@machine:</span><span class="bash-path">~/projets</span><span
+                        class="bash-prompt">$</span>
+                    <span class="bash-command">cat</span> projets_persos.txt
+                </p>
+            </div>
+        </div>
+        <div class="bash-content long-bash-txt" style="display: grid; justify-items: center">
+            <div class="project-card">
+                <img src="img/presPot.png" alt="Lecture Image">
+                <h4>SmartPot</h4>
+                <p><span class="bash-command">> </span>Pot de fleur connecté avec irrigation autonome, Données
+                    d'environnement du pot et interface utilisateur</p>
+                <p><span class="bash-command">> </span>Modélisé puis imprimé en 3D.</p>
+                <p><span class="bash-command">> </span>Concrétisation du projet (Budget, shémas, communication
+                    visuelle).</p>
+                <button>
+                    <a href="img/PrésentationPot.pptx.pdf" class="no-style-link"> PDF de présentation </a>
+                </button>
+            </div>
+            <div class="project-card">
+                <img src="img/Odeur.png" alt="Jeu d'échec Image">
+                <h4>Diffuseur d'odeur</h4>
+                <p><span class="bash-command">> </span>Module s'interfacant avec un diffuseur d'odeur via cartouches en
+                    polyestère permettant un retour d'informations marketing pour le client.</p>
+                <p><span class="bash-command">> </span>Création de rapports à l'attention du client afin de s'interfacer
+                    correctement.</p>
+                <p><span class="bash-command">> </span>Code et logique de communication entre les 2 modules.</p>
+                <button>
+                    <a href="img/Rapport de Stage TIQUET Vianney DU R&T.docx" class="no-style-link"> Word rapport de
+                        stage </a>
+                </button>
+            </div>
+            <div class="project-card">
+                <img src="img/finishCyber.png" alt="Programmation Image">
+                <h4>Vidéo de sensibilisation à la cybersécurité</h4>
+                <p><span class="bash-command">> </span>Vidéo de sensibilisation à l'hygiène informatique et à la
+                    cybersécurité.</p>
+                <p><span class="bash-command">> </span>Réalisé en duo dans le cadre d'un projet en BUT 1ère année.</p>
+                <button>
+                    <a href="img/Pres_cyber.mp4" class="no-style-link"> Vidéo explicative </a>
+                </button>
+            </div>
+        </div>
+    </section>
+</div>
+
+<!-- barre de bas de page -->
+<div id="contact" class="footer-container">
+    <div class="bash-footer">
+        <div style="display: flex">
+            <div class="bash-prompt column" style="align-content: center">
+                <span class="bash-user">vtiquet@machine</span>:<span class="bash-path">~/website</span>$ <span
+                    class="bash-cursor">_</span>
+                <p class="bash-text" style="padding-top: 10px">© 2024 Vianney TIQUET. Tous droits réservés.</p>
+            </div>
+            <div class="bash-prompt  column">
+                <p><span class="bash-command">> Téléphone :</span> 0634232412</p>
+                <p><span class="bash-command">> Email :</span> vianney.tiquet@hotmail.fr</p>
+                <p><span class="bash-command">> LinkedIn :</span>
+                    <a href="https://www.linkedin.com/in/AMettre"
+                       class="bash-link" target="_blank">
+                        <img src="img/LinkedIn.png" alt="LinkedIn">
+                    </a></p>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

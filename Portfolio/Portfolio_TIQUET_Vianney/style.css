@@ -1,0 +1,352 @@
+:root {
+    --green: #9cff38;
+    --blue: #2587e8;
+    --black: #000;
+    --dark-grey: #1e1e1e;
+    --light-grey: #2e2e2e;
+    --border-grey: #555;
+    --white: #e9eceb;
+    --navbar-height: 8%;
+}
+
+/*
+    Nav Bar  // TODO Ajouter animation comme quand écrit dans bash
+*/
+
+.bash-navbar {
+    background-color: var(--dark-grey);
+    color: var(--green);
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 10%;
+}
+
+.bash-navbar-links {
+    display: flex;
+    gap: 20px;
+    flex-grow: 1;
+    justify-content: center;
+}
+
+.bash-navbar-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    position: absolute;
+    left: 20px;
+}
+
+.bash-navbar-logo img {
+    height: 100%;
+    width: auto;
+    border-radius: 10px;
+}
+
+.bash-navbar-links a {
+    color: var(--green);
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+.bash-navbar-links a:hover {
+    color: var(--blue);
+}
+
+/*
+        Home
+*/
+
+.cover {
+    height: 70vh;
+    overflow: hidden;
+}
+
+.cover video {
+    object-fit: cover;
+    animation: fadeIn 2s ease-in-out;
+    border-radius: 10px;
+}
+
+#presentationVideo {
+    width: 100%;
+    height: auto;
+    transition: transform 0.8s ease, opacity 0.8s ease;
+}
+
+.video-scrolled {
+    transform: scale(0.7) translateY(-50px);
+    opacity: 0.3;
+}
+
+
+/*
+        A Propos
+*/
+
+.bash-header {
+    background-color: var(--black);
+    margin: 0 10px 0 10px;
+    padding: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    white-space: nowrap;
+    overflow: hidden;
+    border-radius: 10px 10px 0 0;
+}
+
+.bash-prompt {
+    color: var(--green);
+    display: inline-block;
+    align-items: center;
+}
+
+.bash-path {
+    color: var(--blue);
+    display: inline-block;
+}
+
+.bash-section {
+    background-color: var(--dark-grey);
+    color: var(--green);
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.bash-content {
+    background-color: var(--light-grey);
+    padding: 20px;
+    margin: 0 10px 0 10px;
+    border-radius: 0 0 10px 10px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+    line-height: 1.6;
+    white-space: nowrap;
+    overflow: hidden;
+    color: var(--white);
+}
+
+.bash-command {
+    color: var(--blue);
+}
+
+.long-bash-txt {
+    white-space: normal;
+    color: var(--white);
+}
+
+.bash-text-green {
+    color: var(--green);
+}
+
+.image-container {
+    margin-top: 20px;
+    border: 1px solid var(--border-grey);
+    padding: 10px;
+    display: inline-block;
+    text-align: center;
+    background-color: var(--dark-grey);
+    width: 30%;
+    border-radius: 10px;
+    justify-content: center;
+    max-width: 300px;
+}
+
+.bash-image {
+    max-width: 50%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.image-caption {
+    color: var(--white);
+    margin-top: 10px;
+    font-style: italic;
+}
+
+.note {
+    color: #f57900;
+}
+
+/*
+        Competence
+*/
+
+.competence h3 {
+    margin-top: 0;
+}
+
+.competence ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.competence ul li {
+    margin-left: 20px;
+}
+
+/*
+        Bash text
+*/
+
+.container-text {
+    font-family: "arial", serif;
+    font-size: 1.2em;
+    display: grid;
+    place-items: center;
+}
+
+.typed {
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 2px solid;
+    width: 0;
+    animation: typing 2s steps(30, end) forwards, blinking 0.7s infinite;
+    animation-play-state: paused;
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+    to {
+        width: 100%
+    }
+}
+
+@keyframes blinking {
+    0%, 40% {
+        border-color: transparent
+    }
+    20%, 60% {
+        border-color: var(--black);
+    }
+    100% {
+        border-color: transparent
+    }
+}
+
+/*
+    Cards
+*/
+.project-card {
+    background-color: var(--light-grey);
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid var(--border-grey);
+    text-align: center;
+    width: 60%;
+}
+
+.project-card img {
+    height: auto;
+    max-width: 40%;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.project-card h4 {
+    margin: 0 0 5px 0;
+    color: var(--green);
+}
+
+.project-card p {
+    margin: 0 0 10px 0;
+    color: var(--white);
+}
+
+.project-card button {
+    background-color: #729fcf;
+    color: var(--dark-grey);
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.project-card button:hover {
+    background-color: var(--green);
+    color: var(--dark-grey);
+}
+
+.no-style-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+/*
+        Footer
+*/
+.bash-footer {
+    background-color: var(--dark-grey);
+    color: var(--green);
+    font-family: 'Courier New', Courier, monospace;
+    padding: 0 20px 0 20px;
+    text-align: left;
+    margin-top: auto;
+}
+
+.bash-user {
+    color: var(--green);
+}
+
+.bash-path {
+    color: var(--blue);
+}
+
+.bash-cursor {
+    animation: blink 1s step-end infinite;
+}
+
+.bash-text {
+    margin-top: 10px;
+    font-size: 0.9em;
+    color: var(--white);
+}
+
+.text-right {
+    display: grid;
+    white-space: nowrap;
+    justify-content: right;
+}
+
+.column {
+    flex: 1;
+    padding: 10px;
+}
+
+.bash-link {
+    color: var(--green);
+    text-decoration: none;
+}
+
+.bash-link:hover {
+    text-decoration: underline;
+}
+
+.bash-link img {
+    width: 5em;
+    height: auto;
+    vertical-align: middle;
+}
+
+.bash-link img:hover {
+    opacity: 0.7;
+}
+
+@keyframes blink {
+    from, to {
+        border-color: transparent;
+    }
+    50% {
+        border-color: var(--green);
+    }
+}
